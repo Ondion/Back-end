@@ -27,3 +27,22 @@
   
 ```docker container run -dit ubuntu``` - O  comando ```-d``` combinado com o ```-it``` que manterá o container ativo em segundo plano com um terminal disponível para acesso.  
   
+```docker container create <parâmetros> <imagem>:<tag>``` - Cria um container mas não o executa.  
+  
+```docker container create -it <imagem>:<tag>``` - Cria um container mas não o executa, mas garante o terminal do comando ```-it``` quando o container for executado.  
+  
+```docker ps <parâmetro>``` - Versão antiga equivalente ao ```docker container ls```, provável que seja depreciado.  
+  
+```docker container start <CONTAINER ID || NAMES>``` - Inicia um container usando o ID ou pelo nome.  
+  
+```docker container restart <CONTAINER ID || NAMES>``` - Reinicia um container usando o ID ou pelo nome.  
+  
+```docker container pause <CONTAINER ID || NAMES>``` - Pausa um container usando o ID ou pelo nome.  
+  
+```docker container unpause <CONTAINER ID || NAMES>``` - Remove a pausa de um container usando o ID ou pelo nome.  
+  
+```docker container stop <CONTAINER ID || NAMES>``` - Fecha um container usando o ID ou pelo nome.  
+  
+```docker <start || restart || pause || unpause || stop> <CONTAINER ID || NAMES>``` - Abreviações dos comandos anteriores (versão que poderá ser depreciada).  
+  
+```f```
