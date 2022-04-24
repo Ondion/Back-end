@@ -2,8 +2,10 @@
 
 *_Os comandos Docker tem o seguinte formato:_* ```docker <comando> <sub-comando> <parâmetros>```  
   
-```docker container run <nome-da-imagem>:<tag>``` - Rodar um container.  
-*_Exemplo:_* ```docker container run ubuntu```  
+```docker images``` - Exibe as imagens docker presentes localmente.  
+  
+```docker container run <nome-da-imagem>:<tag>``` - Rodar um container. ```<tag>``` se refere a versão do software que será executado.  
+*_Exemplo:_* ```docker container run ubuntu:2.04```  
   
 ```docker container run <nome-da-imagem> <comandos Shell>``` - Rodar um container e comandos no Shell.  
 *_Exemplo:_* ```docker container run ubuntu echo 'echo dentro da Shell'```  
@@ -16,6 +18,11 @@
 ```docker container ls -a``` - Exibe os containers ativos e os inativos.  
   
 ```docker container ls -l``` - Exibe o ultimo container executado.  
+  
+```docker container run -p <PORTA-SO-HOSPEDEIRO>:<PORTA-SO-CONVIDADO>``` - - Executa uma imagem e faz o mapeamento de portas conforme os valores passados.  
+*_Exemplo:_* ```docker run -d -p 54321:80 httpd:2.4```  
+  
+```docker container run -P``` - Executa uma imagem e faz o mapeamento de portas de forma aleatória.  
   
 ```docker container run -ti ubuntu``` - Roda um container de forma interativa com o Shell local.  
   
@@ -45,4 +52,17 @@
   
 ```docker <start || restart || pause || unpause || stop> <CONTAINER ID || NAMES>``` - Abreviações dos comandos anteriores (versão que poderá ser depreciada).  
   
-```f```
+```docker container attach <CONTAINER ID || NAMES>``` - Acessa um container executando em segundo plano que tenha sido inicializado com o ```-dit``` ou ```it```.  
+  
+```docker container rm <CONTAINER ID || NAMES>``` - Remove um container não ativo.  
+  
+```docker container rm -f <CONTAINER ID || NAMES>``` - Força a parada e remove um container.  
+  
+```docker rmi <IMAGE ID>``` - Remove uma imagem docker não ativa.  
+  
+```docker rmi -f <IMAGE ID>``` - Remove uma imagem docker de força forçada.  
+  
+```docker container prune``` - Remove todos os containers inativos.  
+  
+```docker container top <CONTAINER ID || NAMES>``` - Traz as informações de processos do container passado.  
+  
