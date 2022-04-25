@@ -51,6 +51,8 @@
 ```docker container stop <CONTAINER ID || NAMES>``` - Fecha um container usando o ID ou pelo nome.  
   
 ```docker <start || restart || pause || unpause || stop> <CONTAINER ID || NAMES>``` - Abreviações dos comandos anteriores (versão que poderá ser depreciada).  
+
+  ```docker exec -it <CONTAINER ID> bash``` - Executa o bash de um container já ativo.  
   
 ```docker container attach <CONTAINER ID || NAMES>``` - Acessa um container executando em segundo plano que tenha sido inicializado com o ```-dit``` ou ```it```.  
   
