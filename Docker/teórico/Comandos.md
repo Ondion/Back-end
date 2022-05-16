@@ -68,3 +68,7 @@
   
 ```docker container top <CONTAINER ID || NAMES>``` - Traz as informações de processos do container passado.  
   
+```docker logs <CONTAINER ID || NAMES>``` - Traz informações sobre o andamento do container passado.  
+  
+```docker logs -f <CONTAINER ID || NAMES>``` - Traz informações sobre o andamento do container passado, a tag -f faz o comando ser recorrente.
+  
