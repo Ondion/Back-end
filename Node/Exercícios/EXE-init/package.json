@@ -1,0 +1,15 @@
+{
+  "name": "exe-init",
+  "version": "1.0.0",
+  "description": "exercicio de node",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dog": "node index.js"
+  },
+  "author": "Fabio N. Xavier by Ondion",
+  "license": "MIT",
+  "dependencies": {
+    "dog-names": "^2.0.0"
+  }
+}
