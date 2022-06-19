@@ -1,0 +1,21 @@
+{
+  "name": "exes_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "imc": "node imc.js",
+    "advinha": "node advinha.js",
+    "fatorial": "node fatorial.js",
+    "fibonacci": "node fibonacci.js",
+    "velocidadeMedia.js": "node velocidadeMedia.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
