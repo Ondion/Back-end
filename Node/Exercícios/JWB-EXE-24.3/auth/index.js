@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const SECRET = process.env.SECRET;
+const SECRET = process.env.SECRET || "senhaMágica";
 
 function tokenGenerator(payload) {
   return jwt.sign(payload, SECRET, {
@@ -10,9 +10,12 @@ function tokenGenerator(payload) {
 }
 
 function tokenValidator(token) {
-  
+  return jwt.verify(token, SECRET, {
+    algorithms: 'HS256'
+  });
 }
 
 module.exports = {
-  tokenGenerator
+  tokenGenerator,
+  tokenValidator
 }

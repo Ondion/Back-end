@@ -1,7 +1,12 @@
 function getUser(request, response, next) {
-  return null;
+  response.status(200).json(request.payload)
+}
+
+function secret(request, response, next) {
+  response.status(200).json({ message: "segredo secreto!"});
 }
 
 module.exports = {
-  getUser
+  getUser,
+  secret
 }

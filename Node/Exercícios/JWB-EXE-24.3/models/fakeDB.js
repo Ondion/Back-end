@@ -1,6 +1,6 @@
 module.exports = {
   username: "userTest",
   password: "passwordTest",
-  admin: true,
+  admin: false,
   data: "conteúdo protegido!"
 };

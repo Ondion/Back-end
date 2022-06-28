@@ -8,4 +8,4 @@ api.use(require('./routes'));
 
 api.listen(3000, () => {
   console.log('rodando...');
-})
+});
