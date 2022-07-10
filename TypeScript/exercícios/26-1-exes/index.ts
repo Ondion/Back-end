@@ -25,3 +25,8 @@ enum estacoes {
 function convert(valor: number, unidade: string, base: string): string {
   return 'ola'
 };
+
+function teste(valor: string): string {
+  return valor;
+}
+
