@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.rectangle = exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
+exports.losango = exports.rectangle = exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
 function greeter(name) {
     return "Ol\u00E1 ".concat(name);
 }
@@ -14,7 +14,7 @@ function add(x, y) {
 }
 exports.add = add;
 function sumArray(number) {
-    return number.reduce(add, 0);
+    return number.reduce(function (acc, ele) { return acc + ele; }, 0);
 }
 exports.sumArray = sumArray;
 function triangle(base, height) {
@@ -29,3 +29,7 @@ function rectangle(base, height) {
     return base * height;
 }
 exports.rectangle = rectangle;
+function losango(D, d) {
+    return (D * d) / 2;
+}
+exports.losango = losango;

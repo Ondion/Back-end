@@ -1,4 +1,4 @@
-import * as tt from './exercises';
+// import * as tt from './exercises';
 
 enum diasDaSemana {
   segunda,
@@ -31,6 +31,12 @@ enum card {
   Oeste = 'O'
 }
 
-console.log(tt.greeter('Fábio'));
-console.log(tt.personAge('Fábio', 34));
-console.log(tt.triangle(10, 25));
+// console.log(tt.greeter('Fábio'));
+// console.log(tt.personAge('Fábio', 34));
+// console.log(tt.triangle(10, 25));
+
+enum toto {
+  valor,
+  valal,
+  nejrne
+};
