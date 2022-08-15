@@ -1,7 +1,7 @@
 // import ITest from "./ITest";
 import Conta from "./Conta";
 
-export default class Pagamentos {
+export default abstract class Pagamentos {
   private _conta: Conta;
   private _valor: number;
   // private _tipo: string;
@@ -68,5 +68,7 @@ export default class Pagamentos {
   get conta(): Conta {
     return this._conta;
   }
+
+  protected abstract teste(): void;
 
 };

@@ -32,6 +32,10 @@ export default class Boleto extends Pagamentos {
   get GetMulta(): number {
     return this.multa;
   }
+
+  teste(): void {
+    console.log('first');
+  }
 }
 
 const boleto: Boleto = new Boleto(new Date(), new Conta(7889), 150, 'baladinha');

@@ -1,14 +1,16 @@
 "use strict";
 exports.__esModule = true;
 var Pagamentos = /** @class */ (function () {
-    function Pagamentos(conta, valor, tipo, vencimento, descricao) {
+    // private _multa: number;
+    // private _prestacao: ITest[];
+    function Pagamentos(conta, valor, /* tipo: string, vencimento: Date, */ descricao) {
         this._conta = conta;
         this._valor = valor;
-        this._tipo = tipo;
-        this._vencimento = vencimento;
+        // this._tipo = tipo;
+        // this._vencimento = vencimento;
         this._descricao = descricao || 'n/a';
-        this._multa = 0.2;
-        this._prestacao = [];
+        // this._multa = 0.2;
+        // this._prestacao = [];
     }
     Object.defineProperty(Pagamentos.prototype, "valor", {
         get: function () {
@@ -20,27 +22,19 @@ var Pagamentos = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    Object.defineProperty(Pagamentos.prototype, "tipo", {
-        get: function () {
-            return this._tipo;
-        },
-        set: function (value) {
-            this._tipo = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Pagamentos.prototype, "vencimento", {
-        get: function () {
-            return this._vencimento;
-        },
-        set: function (value) {
-            this._vencimento = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
     Object.defineProperty(Pagamentos.prototype, "descricao", {
+        // get tipo(): string {
+        //   return this._tipo;
+        // }
+        // set tipo(value: string) {
+        //   this._tipo = value;
+        // } 
+        // get vencimento(): Date {
+        //   return this._vencimento;
+        // }
+        // set vencimento(value: Date) {
+        //   this._vencimento = value;
+        // }
         get: function () {
             return this._descricao;
         },
@@ -50,26 +44,17 @@ var Pagamentos = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    Object.defineProperty(Pagamentos.prototype, "multa", {
-        get: function () {
-            return this._multa;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Pagamentos.prototype, "prestacao", {
-        get: function () {
-            return this._prestacao;
-        },
-        set: function (value) {
-            if (value.length > 10)
-                throw new Error('Não pode!');
-            this._prestacao = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
     Object.defineProperty(Pagamentos.prototype, "conta", {
+        // get multa(): number {
+        //   return this._multa;
+        // }
+        // set prestacao(value: ITest[]) {
+        //   if (value.length > 10) throw new Error('Não pode!');
+        //   this._prestacao = value;
+        // }
+        // get prestacao(): ITest[] {
+        //   return this._prestacao;
+        // }
         get: function () {
             return this._conta;
         },
