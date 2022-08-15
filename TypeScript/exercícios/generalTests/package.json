@@ -1,0 +1,12 @@
+{
+  "name": "enutest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "clear && tsc index.ts && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
